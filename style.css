@@ -1,0 +1,141 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #e6f0ff);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+header {
+  background-color: #1e3a8a; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+body.dark-mode header {
+  background-color: #0d1b3a;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0 10px;
+  font-size: 1.2rem;
+}
+
+#mode-toggle {
+  padding: 8px 15px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#mode-toggle:hover {
+  background: #2563eb;
+}
+
+/* Search bar */
+#search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#search-input {
+  width: 250px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#search-input:focus {
+  border-color: #3b82f6;
+}
+
+body.dark-mode #search-input {
+  background: #1e1e1e;
+  color: #f5f5f5;
+  border-color: #3b82f6;
+}
+
+/* Gallery */
+#pose-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.pose-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s, color 0.3s;
+  padding: 10px;
+}
+
+body.dark-mode .pose-card {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.pose-card:hover {
+  transform: scale(1.05);
+}
+
+.pose-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pose-card h3 {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
+
+body.dark-mode .pose-card h3 {
+  color: #3b82f6;
+}
+
+/* Pose description */
+.pose-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+body.dark-mode .pose-desc {
+  color: #ccc;
+}
+
+.pose-desc.show {
+  max-height: 500px;
+  opacity: 1;
+}

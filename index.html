@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoga Pose Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Yoga Pose Library</h1>
+    <p>This library is a guide to exploring a wide range of yoga poses, from traditional classics to modern variations. Each pose comes with clear images, easy-to-follow descriptions, and helpful tips to practice safely. It aims to support your journey toward better flexibility, balance, strength, and relaxation, while also encouraging mindfulness, deep breathing, and overall physical and mental well-being in an approachable and enjoyable way.</p>
+    <button id="mode-toggle">Toggle Dark/Light Mode</button>
+  </header>
+
+  <!-- Search Bar -->
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search yoga poses...">
+  </div>
+
+  <!-- Pose Gallery -->
+  <section id="pose-gallery">
+
+    <!-- Existing 20 Poses -->
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/padmasana.jpg" alt="Padmasana">
+      <h3>Padmasana (Lotus Pose)</h3>
+      <p class="pose-desc">Padmasana helps calm the mind and prepare for meditation. It improves posture and strengthens the spine. This pose enhances flexibility of the hips and ankles. It aids deep breathing and concentration. Practicing it regularly brings inner peace.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/bhujangasana.jpg" alt="Bhujangasana">
+      <h3>Bhujangasana (Cobra Pose)</h3>
+      <p class="pose-desc">Bhujangasana strengthens the spine and opens the chest. It improves flexibility and posture. This pose reduces fatigue and stress. It stimulates abdominal organs for better digestion. Regular practice boosts energy and uplifts mood.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/vrikshasana.jpg" alt="Vrikshasana">
+      <h3>Vrikshasana (Tree Pose)</h3>
+      <p class="pose-desc">Vrikshasana improves balance and concentration. It strengthens legs, ankles, and spine. This pose enhances body awareness and stability. It helps build mental clarity and confidence. Practicing daily calms the nervous system.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/trikonasana.jpg" alt="Trikonasana">
+      <h3>Trikonasana (Triangle Pose)</h3>
+      <p class="pose-desc">Trikonasana stretches the spine, chest, and legs. It improves digestion and reduces back pain. This pose strengthens thighs, knees, and ankles. It enhances stability and balance. Regular practice increases energy and reduces anxiety.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/shavasana.jpg" alt="Shavasana">
+      <h3>Shavasana (Corpse Pose)</h3>
+      <p class="pose-desc">Shavasana relaxes the body completely and relieves stress. It improves concentration and memory. This pose reduces anxiety and lowers blood pressure. It rejuvenates both body and mind. Practicing it daily restores inner calm.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/dhanurasana.jpg" alt="Dhanurasana">
+      <h3>Dhanurasana (Bow Pose)</h3>
+      <p class="pose-desc">Dhanurasana strengthens the back and abdominal muscles. It improves posture, stimulates digestion, and opens the chest. Practicing this pose increases flexibility and energizes the body.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/setu_bandhasana.jpg" alt="Setu Bandhasana">
+      <h3>Setu Bandhasana (Bridge Pose)</h3>
+      <p class="pose-desc">Setu Bandhasana stretches the chest, neck, spine, and hips. It relieves stress and calms the brain. This pose improves circulation, stimulates abdominal organs, and strengthens the back muscles.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/paschimottanasana.jpg" alt="Paschimottanasana">
+      <h3>Paschimottanasana (Seated Forward Bend)</h3>
+      <p class="pose-desc">Paschimottanasana stretches the spine, shoulders, and hamstrings. It soothes the nervous system, improves digestion, and relieves stress. Regular practice calms the mind and increases flexibility.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/utkatasana.jpg" alt="Utkatasana">
+      <h3>Utkatasana (Chair Pose)</h3>
+      <p class="pose-desc">Utkatasana strengthens thighs, calves, and spine. It stimulates the heart and diaphragm. Practicing regularly improves balance, focus, and endurance.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/ardha_matsyendrasana.jpg" alt="Ardha Matsyendrasana">
+      <h3>Ardha Matsyendrasana (Half Spinal Twist)</h3>
+      <p class="pose-desc">Ardha Matsyendrasana improves spinal flexibility, tones abdominal organs, and aids digestion. It stretches shoulders and hips and enhances balance and posture.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/halasana.jpg" alt="Halasana">
+      <h3>Halasana (Plow Pose)</h3>
+      <p class="pose-desc">Halasana stretches the shoulders and spine. It calms the brain, reduces stress, and stimulates the abdominal organs. Practicing this pose improves flexibility.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/sarvangasana.jpg" alt="Sarvangasana">
+      <h3>Sarvangasana (Shoulder Stand)</h3>
+      <p class="pose-desc">Sarvangasana improves circulation, strengthens shoulders, and calms the mind. It stimulates thyroid and respiratory systems and relieves fatigue.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/navasana.jpg" alt="Navasana">
+      <h3>Navasana (Boat Pose)</h3>
+      <p class="pose-desc">Navasana strengthens the abdomen, hip flexors, and spine. It improves balance, digestion, and core stability. Regular practice enhances concentration and endurance.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/ustrasana.jpg" alt="Ustrasana">
+      <h3>Ustrasana (Camel Pose)</h3>
+      <p class="pose-desc">Ustrasana stretches the chest, abdomen, and thighs. It strengthens back muscles and improves posture. Practicing this pose energizes the body and relieves back stiffness.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/anjaneyasana.jpg" alt="Anjaneyasana">
+      <h3>Anjaneyasana (Low Lunge)</h3>
+      <p class="pose-desc">Anjaneyasana stretches the hips, groin, and legs. It strengthens lower body and improves balance. This pose relieves tension and promotes focus and flexibility.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/garudasana.jpg" alt="Garudasana">
+      <h3>Garudasana (Eagle Pose)</h3>
+      <p class="pose-desc">Garudasana enhances balance, stretches shoulders and upper back, and strengthens legs. It improves focus, coordination, and flexibility in the joints.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/virasana.jpg" alt="Virasana">
+      <h3>Virasana (Hero Pose)</h3>
+      <p class="pose-desc">Virasana improves posture, stretches thighs, knees, and ankles. It aids digestion and meditation practice. Regular practice reduces fatigue and increases stability.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/padahastasana.jpg" alt="Padahastasana">
+      <h3>Padahastasana (Standing Forward Bend)</h3>
+      <p class="pose-desc">Padahastasana stretches the spine, hamstrings, and calves. It calms the mind, improves digestion, and reduces stress. Practicing daily enhances flexibility.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/baddha_konasana.jpg" alt="Baddha Konasana">
+      <h3>Baddha Konasana (Bound Angle Pose)</h3>
+      <p class="pose-desc">Baddha Konasana stretches the inner thighs, groins, and knees. It improves circulation, relieves menstrual discomfort, and enhances flexibility in the hips.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/matsyasana.jpg" alt="Matsyasana">
+      <h3>Matsyasana (Fish Pose)</h3>
+      <p class="pose-desc">Matsyasana stretches the chest and spine. It stimulates thyroid, improves posture, and relieves tension in the back and neck. Regular practice energizes the body.</p>
+    </div>
+
+    <!-- New 10 Poses -->
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/vajrasana.jpg" alt="Vajrasana">
+      <h3>Vajrasana (Thunderbolt Pose)</h3>
+      <p class="pose-desc">Vajrasana improves digestion, strengthens the back, and enhances focus during meditation. It is excellent for calming the mind and body after meals.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/kumbhakasana.jpg" alt="Kumbhakasana">
+      <h3>Kumbhakasana (Plank Pose)</h3>
+      <p class="pose-desc">Kumbhakasana strengthens the core, arms, wrists, and spine. It improves stamina, balance, and posture while toning the abdominal muscles.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/makarasana.jpg" alt="Makarasana">
+      <h3>Makarasana (Crocodile Pose)</h3>
+      <p class="pose-desc">Makarasana relaxes the body, calms the mind, and relieves stress. It improves breathing and helps restore energy.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/suptavasanasana.jpg" alt="Supta Vasanasana">
+      <h3>Supta Vasanasana (Reclining Pose)</h3>
+      <p class="pose-desc">Supta Vasanasana stretches the spine, chest, and abdomen. It relaxes the muscles and relieves tension in the back and shoulders.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/bakasana.jpg" alt="Bakasana">
+      <h3>Bakasana (Crow Pose)</h3>
+      <p class="pose-desc">Bakasana improves balance, strengthens arms and wrists, tones the abdomen, and enhances mental focus and coordination.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/parvatasana.jpg" alt="Parvatasana">
+      <h3>Parvatasana (Mountain Pose)</h3>
+      <p class="pose-desc">Parvatasana stretches the arms, shoulders, and spine. It improves posture, balance, and overall body alignment.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/janu_sirsasana.jpg" alt="Janu Sirsasana">
+      <h3>Janu Sirsasana (Head-to-Knee Forward Bend)</h3>
+      <p class="pose-desc">Janu Sirsasana stretches the spine and hamstrings. It calms the mind, improves digestion, and relieves anxiety.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/salabhasana.jpg" alt="Salabhasana">
+      <h3>Salabhasana (Locust Pose)</h3>
+      <p class="pose-desc">Salabhasana strengthens the back, glutes, and legs. It improves posture, stimulates abdominal organs, and increases overall flexibility.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/mayurasana.jpg" alt="Mayurasana">
+      <h3>Mayurasana (Peacock Pose)</h3>
+      <p class="pose-desc">Mayurasana strengthens the wrists, arms, and abdomen. It improves balance, digestion, and overall body control.</p>
+    </div>
+
+    <div class="pose-card" onclick="toggleDescription(this)">
+      <img src="images/sirsasana.jpg" alt="Sirsasana">
+      <h3>Sirsasana (Headstand)</h3>
+      <p class="pose-desc">Sirsasana improves circulation, strengthens shoulders and arms, calms the mind, and enhances focus and balance.</p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
